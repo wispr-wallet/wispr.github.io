@@ -1,0 +1,255 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*----Reset-End----*/
+
+@light: #F7F7F7;
+@graymed: #96A0AC;
+@graydark: #35383D;
+@black: #000;
+@smallfont:14px;
+@medfont:16px;
+@heavyfont:700;
+
+body {
+	background-color: @black;
+	color: @light;
+	font-size: @medfont;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 400;
+	line-height: 1.66;
+	overflow-x: hidden;
+}
+
+h1 {
+	font-size: 52px;
+	font-weight: @heavyfont;
+	margin-bottom: 10px;
+}
+
+h2 {
+	font-size: 36px;
+	font-weight: @heavyfont;
+	margin: 20px 0;
+	line-height: 1.33;
+}
+
+h3 {
+	font-size: 21px;
+	font-weight: @heavyfont;
+}
+
+#twitter {
+	width: 26px;
+}
+
+nav {
+
+	width: calc(100% - 60px);
+    margin: 0 30px;
+    text-align: right;
+    color: #96A0AC;
+
+	span {
+		vertical-align: top;
+    	position: relative;
+    	top: 33px;
+    	margin-right: 20px;
+	}
+
+	img {
+		width: 30px;
+		margin: 30px 10px;
+	}
+}
+
+.logo {
+	float: left;
+	width: 32px;
+	margin-top: 40px;
+}
+
+.sectionContainer {
+	max-width: 1920px;
+	margin: 60px auto;
+	text-align: center;
+}
+
+.sectionContainer-hello {
+	text-align: left;
+	position: relative;
+	width: 1180px;
+	height: 820px;
+	margin-top: 0;
+}
+
+#textHello {
+	position: relative;
+	top: 260px;
+	max-width: 360px;
+}
+
+#imgHello {
+	position: absolute;
+	right: -180px;
+	top: 0;
+}
+
+.wrapperDown {
+	color: @graymed;
+	font-size: @smallfont;
+	line-height: 1.33;
+	position: absolute;
+	left: 0;
+	bottom: 60px;
+}
+
+#imgScroll {
+	width: 28px;
+	margin-top: 10px;
+}
+
+.sectionContainer-advantages {
+	background-image: url("../media/bgadvantages.png");
+	margin-bottom: 120px;
+}
+
+.advantageContainer {
+	display: inline-block;
+	width: 240px;
+	margin: 155px 20px;
+	background-color: @black;
+	padding: 60px;
+	vertical-align: top;
+	border-radius: 16px;
+	text-align: left;
+	
+	p {
+		font-size: @smallfont;
+		height: 136px;
+		margin-top: 25px;
+	}
+
+	img {
+		margin-top: 10px;
+		margin-bottom: 35px;
+	}
+}
+
+.halfWrapper {
+	width: 49%;
+	display: inline-block;
+	vertical-align: top;
+
+	p {
+		width: 400px;
+	    display: inline-block;
+	    margin: 0px 50px;
+	}
+	
+	h2 {
+	    display: block;
+	    margin: 200px 50px 30px 50px;
+	}
+}
+
+.halfWrapper-left {
+	text-align: right;
+}
+
+.halfWrapper-right {
+	text-align: left;
+}
+
+.sectionContainer-examples h2 {
+	background-image: url("../media/bg.png");
+	width: 1400px;
+	padding: 189px 0;
+	font-size: 50px;
+	line-height: 1.2;
+	margin: 120px auto 0;
+	margin-bottom: -117px;
+}
+
+.exampleWrapper {
+	width: 360px;
+	margin: 20px;
+	display: inline-block;
+	vertical-align: top;
+
+	p {
+		text-align: left;;
+		color: @graymed;
+		margin: 10px 0 30px 0;
+		font-size: @smallfont;
+	}
+}
+
+footer {
+	text-align: center;
+	
+	h3 {
+		border-top: 1px solid @graydark;
+		padding-top: 40px;
+	}
+
+	p {
+		font-size: @smallfont;
+		color: @graymed;
+		margin: 10px auto 40px;
+	}
+}
+
+.comingTitle {
+	background-image: url("../media/bgcoming.png");
+	margin: 60px auto 20px;
+	padding: 41px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.socials img {
+	width: 30px;
+	margin: 10px 10px 80px;
+}
